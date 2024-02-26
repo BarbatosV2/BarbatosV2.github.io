@@ -3,15 +3,20 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 150px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
-    text-align: center;
-    padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  text-align: center;
+  padding: 20px;
+  z-index: 1000; /* Set a high z-index to ensure the header is on top of other elements */
 }
 
 section {
