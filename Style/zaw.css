@@ -113,7 +113,7 @@ input:checked + .slider:before {
 }
 
 .label-text {
-  margin: 0 25px; /* Adjust the spacing between the label and the switch */
+  margin: 0 10px; /* Adjust the spacing between the label and the switch */
   color: var(--label-color); /* Use the appropriate label color */
 }
 
