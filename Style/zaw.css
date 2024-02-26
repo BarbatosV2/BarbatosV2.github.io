@@ -1,0 +1,281 @@
+/* zaw.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--section-bg-color);
+    color: var(--section-text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+}
+
+.social-icons a:hover .icon {
+    transform: scale(1.2);
+}
+
+.icon-link:hover {
+    filter: brightness(1.2);
+}
+
+.github-icon img {
+    transition: transform 0.3s ease;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.light-theme {
+    --header-bg-color: #f5f5f5;
+    --header-text-color: #333;
+    --section-bg-color: #fff;
+    --section-text-color: #555;
+}
+
+.dark-theme {
+    --header-bg-color: #333;
+    --header-text-color: #fff;
+    --section-bg-color: #2c2c2c;
+    --section-text-color: #eee;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 30px;
+    position: absolute;
+    width: 60px;
+    transition: background-color 0.3s;
+}
+
+.slider:before {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    background-color: #ccc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+input:checked + .slider {
+    background-color: #2E2E2E;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* timeline */
+
+:root {
+  --background-light: #fff;
+  --background-dark: #333;
+  --text-light: #333;
+  --text-dark: #fff;
+}
+
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #ccd639;      /*line color  defult var(--text-light) */
+  transform: translateX(-50%);
+  transition: background 0.3s;
+}
+
+.timeline-item {
+  position: relative;
+  max-width: 50%;
+  margin-bottom: 50px;
+  clear: both;
+  transition: transform 0.3s; /* Added transition for smooth hover effect */
+}
+
+.timeline-item:hover {
+  transform: scale(1.05); /* Make the text box larger on hover */
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Adjusted position to be above the text */
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #ccd639;      /*dot color  defult var(--text-light) */
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.timeline-item:hover::before {
+  transform: scale(1.5); /* Make the circle larger on hover */
+}
+
+.timeline-item:nth-child(even) {
+  float: right;
+}
+
+.timeline-item:nth-child(even) .timeline-item::before {
+  left: auto;
+  right: -8px; /* Adjusted position for the circle on the right side */
+  transform: translateX(50%); /* Move the circle to the right */
+}
+
+.timeline-item:nth-child(odd) {
+  float: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-item::before {
+  left: -8px; /* Adjusted position for the circle on the left side */
+  right: auto;
+  transform: translateX(-50%); /* Move the circle to the left */
+}
+
+.timeline-item-content {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  background: transparent; /* Set background to transparent */
+  transition: background 0.3s; /* Added transition for smooth hover effect */
+  text-align: center; /* Center the content */
+}
+
+.timeline-item:hover .timeline-item-content {
+  background: transparent; /* Change the background on hover */
+}
+
+h3, p {
+  margin: 0;
+}
+
+/*
+.date {
+  color: #888;
+}
+
+.timeline-item h3 {
+  color: var(--text-light); /* Change to the color you prefer 
+}  */
+
+.timeline-item img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  border-radius: 10%; /* Add a border radius to make it circular */
+  margin-bottom: 10px; /* Add some space between image and text */
+}
+
+.item1 img {
+  height: 150px; /* Set the height of the image for item 1 */
+}
+
+.item2 img {
+  height: 120px; /* Set the height of the image for item 2 */
+}
+
+.item3 img {
+  height: 180px; /* Set the height of the image for item 3 */
+}
+
+.item4 img {
+  height: 150px; /* Set the height of the image for item 4 */
+}
+
+.item5 img {
+  height: 170px; /* Set the height of the image for item 5 */
+}
+
+/* experience */
+
+.uni-logo {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Adjust margin as needed */
+  border-radius: 10%;
+}
+
+.uni-logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%); /* Center the tooltip initially */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  background-color: #fff;
+  color: #333; /* Set the font color to your desired color */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust the width as needed */
+  z-index: 1;
+}
+
+.uni-logo-container:hover .tooltip {
+  visibility: visible;
+  transform: translate(-100%, -50%); /* Slide the tooltip to the left on hover */
+}
