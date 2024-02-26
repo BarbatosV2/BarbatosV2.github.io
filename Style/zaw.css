@@ -106,6 +106,17 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.label-text {
+  margin: 0 10px; /* Adjust the spacing between the label and the switch */
+  color: var(--label-color); /* Use the appropriate label color */
+}
+
 /* timeline */
 
 :root {
