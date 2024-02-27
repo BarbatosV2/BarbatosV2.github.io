@@ -332,3 +332,12 @@ h3, p {
   visibility: visible;
   transform: translate(-100%, -50%); /* Slide the tooltip to the left on hover */
 }
+
+/* copy rights */
+
+#copyright {
+  text-align: center;
+  padding: 10px;
+  color: #fff; /* Set text color to transparent */
+  bottom: 0;
+}
