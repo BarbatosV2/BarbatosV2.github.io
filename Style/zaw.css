@@ -122,6 +122,43 @@ input:checked + .slider:before {
   color: var(--label-color); /* Use the appropriate label color */
 }
 
+/* skills  */
+
+/* Add this style for the skills section */
+#skills {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style each skill set */
+#skills p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Create a 3x3 grid for skills sets */
+#skills p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Add spacing and styling for individual skills */
+#skills p span {
+  display: block;
+  margin: 15px;
+  padding: 18px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect to make skills bigger */
+#skills p span:hover {
+  transform: scale(1.1);
+}
+
 /* timeline */
 
 :root {
