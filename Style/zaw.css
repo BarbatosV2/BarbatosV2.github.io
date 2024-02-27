@@ -333,6 +333,21 @@ h3, p {
   transform: translate(-100%, -50%); /* Slide the tooltip to the left on hover */
 }
 
+/* download resume */
+
+#download a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#download a:hover {
+  background-color: #555;
+}
+
 /* copy rights */
 
 #copyright {
