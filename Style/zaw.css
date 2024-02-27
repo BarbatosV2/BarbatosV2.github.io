@@ -353,6 +353,6 @@ h3, p {
 #copyright {
   text-align: center;
   padding: 10px;
-  color: var(--text-color) /* Set text color to transparent */
+  color: var(--text-color);
   bottom: 0;
 }
