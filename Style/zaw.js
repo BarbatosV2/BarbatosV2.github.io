@@ -1,9 +1,4 @@
-// zaw.js
 const body = document.body;
-
-function toggleTheme() {
-    document.body.classList.toggle('dark-theme');
-}
 
 function toggleTheme() {
     body.classList.toggle('light-theme');
