@@ -9,9 +9,9 @@ function toggleTheme() {
     const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
     githubIcon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
 
-    // Change the theme mode text
-    const themeModeText = document.getElementById('theme-mode');
-    themeModeText.textContent = body.classList.contains('dark-theme') ? 'Light Mode' : 'Dark Mode';
+    // Change the theme toggle text
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.textContent = body.classList.contains('dark-theme') ? 'Light Mode' : 'Dark Mode';
 }
 
 // Initial setting for the theme mode text
