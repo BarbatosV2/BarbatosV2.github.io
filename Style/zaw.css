@@ -356,3 +356,48 @@ h3, p {
   color: var(--text-color);
   bottom: 0;
 }
+
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  background-color: var(--header-bg-color);
+  padding: 10px 20px; /* Add padding to create some space */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make the list items horizontal */
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-weight: bold;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+      padding-top: 100px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar {
+      justify-content: center; /* Center items on smaller screens */
+  }
+
+  .navbar ul {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items vertically */
+  }
+
+  .navbar li {
+      margin: 10px 0; /* Add margin between items */
+  }
+}
