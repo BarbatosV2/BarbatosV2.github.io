@@ -3,7 +3,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 30px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -370,7 +370,7 @@ h3, p {
   display: flex;
   justify-content: flex-end; /* Align items to the right */
   background-color: var(--header-bg-color);
-  padding: 10px 20px; /* Add padding to create some space */
+  padding: 0px 20px; /* Add padding to create some space */
 }
 
 .navbar ul {
@@ -396,6 +396,3 @@ h3, p {
   transform: scale(1.1); /* Scale the button by 10% on hover */
 }
 
-.navbar h3 {
-  margin-right: auto; /* Push the h3 element to the left */
-}
