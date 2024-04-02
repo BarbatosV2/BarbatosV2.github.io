@@ -3,7 +3,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding-top: 150px;
+    padding-top: 50px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -157,6 +157,13 @@ input:checked + .slider:before {
 /* Hover effect to make skills bigger */
 #skills p span:hover {
   transform: scale(1.1);
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+  #skills p {
+    grid-template-columns: repeat(2, 1fr); /* Display skills in two columns */
+  }
 }
 
 /* timeline */
@@ -358,6 +365,7 @@ h3, p {
 }
 
 /* Navigation Bar Styles */
+/* Navigation Bar Styles */
 .navbar {
   display: flex;
   justify-content: flex-end; /* Align items to the right */
@@ -374,6 +382,7 @@ h3, p {
 
 .navbar li {
   margin: 0 10px;
+  transition: transform 0.3s; /* Add transition for smooth scaling */
 }
 
 .navbar a {
@@ -382,22 +391,11 @@ h3, p {
   font-weight: bold;
 }
 
-/* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
-  header {
-      padding-top: 100px; /* Adjust padding for smaller screens */
-  }
+/* Scale the navigation buttons on hover */
+.navbar li:hover {
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}
 
-  .navbar {
-      justify-content: center; /* Center items on smaller screens */
-  }
-
-  .navbar ul {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center; /* Center items vertically */
-  }
-
-  .navbar li {
-      margin: 10px 0; /* Add margin between items */
-  }
+.navbar h3 {
+  margin-right: auto; /* Push the h3 element to the left */
 }

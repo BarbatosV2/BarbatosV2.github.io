@@ -9,8 +9,13 @@ function toggleTheme() {
     const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
     githubIcon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
 
-    // Change the copyright text color based on the theme
-    const copyrightText = document.querySelector('#copyright p');
-    const textColor = body.classList.contains('dark-theme') ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
-    copyrightText.style.color = textColor;
+    // Change the theme mode text
+    const themeModeText = document.getElementById('theme-mode');
+    themeModeText.textContent = body.classList.contains('dark-theme') ? 'Light Mode' : 'Dark Mode';
 }
+
+// Initial setting for the theme mode text
+document.addEventListener('DOMContentLoaded', function() {
+    const themeModeText = document.getElementById('theme-mode');
+    themeModeText.textContent = body.classList.contains('dark-theme') ? 'Light Mode' : 'Dark Mode';
+});
