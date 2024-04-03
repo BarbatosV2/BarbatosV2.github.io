@@ -11,25 +11,31 @@
 </head>
 
 <body class="dark-theme">
+
   <header>
-      <nav class="navbar">
-          <ul>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Experiences</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#download">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li id="theme-toggle" onclick="toggleTheme()">Light Mode</li> <!-- Added an ID for the theme toggle -->
-          </ul>
+    <div class="navbar">
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Experiences</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#download">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li id="theme-toggle" onclick="toggleTheme()">Light Mode</li> <!-- Added an ID for the theme toggle -->
+        </ul>
       </nav>
+    </div>
   </header>
 
   <section id="about">
-    <h2>Welcome to my Portfolio</h2>
-      <p>
-        Welcome to my portfolio! My name is Zaw Win Paing. I am graduated with Bachelor of Computer Science (AI) from the University of Adelaide. 
-      </p>
+    <h2>My name is Zaw Win Paing</h2>
+    <h2 id="typewriter">I am into <span id="dynamicText"></span></h2>
   </section>
 
   <section id="skills">
@@ -99,7 +105,7 @@
 
     </section>
 
-    <section>
+    <section id="education">
       <div class="project">
         <h2>Education</h3>
           <div class="uni-logo-container">

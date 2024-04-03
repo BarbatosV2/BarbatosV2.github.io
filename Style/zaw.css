@@ -26,6 +26,39 @@ section {
     padding: 20px;
 }
 
+#about {
+  padding: 70px 20px; /* Adjust the padding as needed */
+}
+
+.red-text {
+  color: red;
+}
+
+/* Adjust padding for the 'projects' section */
+#projects {
+  padding: 60px 20px; /* Adjust the padding as needed */
+}
+
+/* Adjust padding for the 'education' section */
+#education {
+  padding: 60px 20px; /* Adjust the padding as needed */
+}
+
+/* Adjust padding for the 'download' section */
+#download {
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+/* Adjust padding for the 'contact' section */
+#contact {
+  padding: 40px 20px; /* Adjust the padding as needed */
+}
+
+/* Adjust padding for the 'copyright' section */
+#copyright {
+  padding: 20px; /* Adjust the padding as needed */
+}
+
 .social-icons {
     display: flex;
     justify-content: space-evenly;
@@ -127,7 +160,7 @@ input:checked + .slider:before {
 /* Add this style for the skills section */
 #skills {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 /* Style each skill set */
@@ -394,5 +427,115 @@ h3, p {
 /* Scale the navigation buttons on hover */
 .navbar li:hover {
   transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+
+/* Styling for the hamburger menu icon */
+.hamburger-menu {
+  display: none; /* Initially hide the hamburger menu */
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Display the hamburger menu on smaller screens */
+  }
+}
+
+/* Styling for the X button */
+.hamburger-menu.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Styling for the navigation menu */
+#navbar {
+  display: flex;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Display the hamburger menu on smaller screens */
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    position: fixed;
+    top: 60px; /* Adjust the distance from the top as needed */
+    right: -250px; /* Initially hide the menu off-screen to the right */
+    width: 250px;
+    height: 100%;
+    background-color: var(--section-bg-color);
+    transition: right 0.5s ease; /* Add transition for smooth sliding effect */
+  }
+
+  /* Adjust navigation button color */
+  #navbar a {
+    color: var(--section-text-color); /* Change color based on theme */
+  }
+  
+  #navbar.active {
+    right: 0; /* Slide the menu to the left when active */
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Display the list items vertically */
+  }
+  
+  .navbar li {
+    margin: 10px 0; /* Adjust margin for spacing between items */
+    text-align: center; /* Center the text within list items */
+    width: 100%; /* Make list items take full width */
+  }
+
+  }
+  
+  #navbar.active {
+    right: 0; /* Slide in the menu from the right when active */
+  }
+
+/* Adjust hamburger menu color */
+.hamburger-menu .bar {
+  background-color: var(--header-text-color); /* Change color based on theme */
+}
+
+/* Adjust X button color */
+.hamburger-menu.open .bar:nth-child(1),
+.hamburger-menu.open .bar:nth-child(2),
+.hamburger-menu.open .bar:nth-child(3) {
+  background-color: var(--header-text-color); /* Change color based on theme */
+}
+
+/* Adjust navigation button color */
+#navbar a {
+  color: var(--header-text-color); /* Change color based on theme */
 }
 
