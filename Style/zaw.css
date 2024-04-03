@@ -398,7 +398,6 @@ h3, p {
 }
 
 /* Navigation Bar Styles */
-/* Navigation Bar Styles */
 .navbar {
   display: flex;
   justify-content: flex-end; /* Align items to the right */
@@ -544,3 +543,15 @@ h3, p {
   color: var(--header-text-color); /* Change color based on theme */
 }
 
+#catImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust the max-width for smaller screens */
+  #catImage {
+    max-width: 80%; /* Adjust the percentage as needed */
+  }
+}
