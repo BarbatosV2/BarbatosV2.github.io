@@ -479,6 +479,11 @@ h3, p {
 @media screen and (max-width: 768px) {
   .hamburger-menu {
     display: block; /* Display the hamburger menu on smaller screens */
+    cursor: pointer;
+    position: fixed; /* Position the hamburger menu button */
+    top: 20px; /* Adjust the distance from the top as needed */
+    right: 20px; /* Move the hamburger menu button 20px to the left */
+    z-index: 1100; /* Set a higher z-index to ensure it's above other elements */
   }
 
   #navbar {
