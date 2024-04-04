@@ -489,7 +489,7 @@ h3, p {
     display: flex;
     justify-content: center; /* Center the items horizontally */
     position: fixed;
-    top: 70px; /* Adjust the distance from the top as needed */
+    top: 65px; /* Adjust the distance from the top as needed */
     right: -250px; /* Initially hide the menu off-screen to the right */
     width: 250px;
     height: 100%;
