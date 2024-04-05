@@ -604,11 +604,14 @@ body.light-theme #download a {
   color: #fff;
   background-color: #333;
   padding: 10px 5px;
+  width: auto; /* Allow the button to adjust its width based on content */
   text-decoration: none;
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
   display: inline-flex; /* Changed to inline-flex */
   align-items: center; /* Added to vertically center the logo */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  min-width: 120px; /* Set a minimum width for the button */
 }
 
 .project-item .github-logo {
