@@ -35,7 +35,7 @@ section {
 }
 
 /* Adjust padding for the 'projects' section */
-#projects {
+#experiences {
   padding: 60px 20px; /* Adjust the padding as needed */
 }
 
@@ -553,5 +553,53 @@ h3, p {
   /* Adjust the max-width for smaller screens */
   #catImage {
     max-width: 80%; /* Adjust the percentage as needed */
+  }
+}
+
+/*--------------------------------------------*/
+#projects {
+  text-align: center;
+  padding: 50px;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.project-item {
+  flex: 1;
+  margin: 0 20px; /* Add margin to create separation */
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.github-link {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.github-link:hover {
+  background-color: #555;
+}
+
+/* Add this media query to adjust the layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .project-row {
+    flex-direction: column; /* Change the layout to a single column */
+  }
+
+  .project-item {
+    width: 100%; /* Make each project item take full width */
+    margin-bottom: 20px; /* Add some space between items */
   }
 }
