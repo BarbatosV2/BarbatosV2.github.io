@@ -601,6 +601,7 @@ body.light-theme #download a {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+  justify-content: center; /* Center content horizontally */
   color: #fff;
   background-color: #333;
   padding: 10px 5px;
@@ -611,7 +612,7 @@ body.light-theme #download a {
   display: inline-flex; /* Changed to inline-flex */
   align-items: center; /* Added to vertically center the logo */
   border: 1px solid #ccc; /* Add border for better visibility */
-  min-width: 120px; /* Set a minimum width for the button */
+  min-width: 220px; /* Set a minimum width for the button */
 }
 
 .project-item .github-logo {
