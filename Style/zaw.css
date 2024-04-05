@@ -618,6 +618,7 @@ body.light-theme .github-link {
 @media screen and (max-width: 768px) {
   .project-row {
     flex-direction: column; /* Change the layout to a single column */
+    align-items: center; /* Center-align items vertically */
   }
 
   .project-item {
