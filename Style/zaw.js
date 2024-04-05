@@ -9,6 +9,12 @@ function toggleTheme() {
     const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
     githubIcon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
 
+    // Change the GitHub icon based on the theme for the projects section
+    const githubIconProjects = document.querySelectorAll('#projects .github-logo');
+    githubIconProjects.forEach(icon => {
+        icon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
+    });
+
     const catImage = document.getElementById('catImage');
     catImage.src = `Logos/cat/cat_${theme}.png`;
 
