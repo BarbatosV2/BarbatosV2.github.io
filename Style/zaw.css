@@ -31,10 +31,16 @@ section {
 }
 
 #introimg {
-  width: 80%; /* Adjust the percentage as needed */
+  width: 30%; /* Adjust the percentage as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
+@media screen and (max-width: 1000px) {
+  #introimg {
+    width: 60%; /* Adjust the percentage as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
 
 .red-text {
   color: red;
