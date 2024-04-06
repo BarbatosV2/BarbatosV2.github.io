@@ -30,6 +30,12 @@ section {
   padding: 70px 20px; /* Adjust the padding as needed */
 }
 
+#introimg {
+  width: 50%; /* Adjust the percentage as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 .red-text {
   color: red;
 }
