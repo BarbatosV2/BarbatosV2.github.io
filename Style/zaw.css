@@ -77,7 +77,7 @@ section {
   }
 
   .about-image {
-    padding-left: 80px;
+    padding-left: 60px;
     margin-bottom: 20px;
   }
 
@@ -98,7 +98,7 @@ section {
 
 /* Adjust padding for the 'download' section */
 #download {
-  padding: 20px; /* Adjust the padding as needed */
+  padding: 50px; /* Adjust the padding as needed */
 }
 
 /* Adjust padding for the 'contact' section */
