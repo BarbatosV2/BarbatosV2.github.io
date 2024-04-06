@@ -26,7 +26,7 @@ function toggleTheme() {
     const copyrightText = document.querySelector('#copyright p');
     const textColor = body.classList.contains('dark-theme') ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
     copyrightText.style.color = textColor;
-
+    
     // Change colors for hamburger menu and navigation buttons
     const hamburgerBars = document.querySelectorAll('.hamburger-menu .bar');
     const navButtons = document.querySelectorAll('#navbar a');
