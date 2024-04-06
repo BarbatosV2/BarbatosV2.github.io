@@ -26,12 +26,63 @@ section {
     padding: 20px;
 }
 
-#about {
+#intro {
   padding: 70px 20px; /* Adjust the padding as needed */
 }
 
 .red-text {
   color: red;
+}
+
+/* Adjust the styles for the about section */
+#about {
+  text-align: center; /* Center the heading */
+  padding: 50px;
+}
+
+/* Adjust the styles for the about heading */
+#about h2 {
+  margin-bottom: 2px; /* Add space below the heading */
+}
+
+/* Adjust the styles for the about content */
+.about-content {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Adjust the styles for the image */
+.about-image {
+  margin-right: 100px; /* Add space between image and text */
+}
+
+/* Adjust the size of the image */
+.about-image img {
+  width: 400px; /* Set the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Adjust the styles for the paragraph */
+.about-text {
+  text-align: left; /* Left-align the paragraph */
+  padding-right: 20px;
+}
+
+
+/* Adjustments for mobile view */
+@media screen and (max-width: 1200px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding-right: 20px; /* Add padding to the right side */
+  }
 }
 
 /* Adjust padding for the 'experience' section */
@@ -227,6 +278,7 @@ body.light-theme #skills p span {
   max-width: 800px;
   margin: 50px auto;
   overflow: hidden;
+  padding: 50px;
 }
 
 .timeline::before {
@@ -245,6 +297,7 @@ body.light-theme #skills p span {
   position: relative;
   max-width: 50%;
   margin-bottom: 50px;
+  padding: 5px;
   clear: both;
   transition: transform 0.3s; /* Added transition for smooth hover effect */
 }
@@ -341,6 +394,27 @@ h3, p {
 .item5 img {
   height: 170px; /* Set the height of the image for item 5 */
 }
+
+/* Remove the green line from the timeline section on mobile web */
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    display: none; /* Hide the green line */
+  }
+
+  .timeline-item {
+    max-width: 100%; /* Set the maximum width to 100% to occupy the full width */
+  }
+
+  .timeline-item:nth-child(even),
+  .timeline-item:nth-child(odd) {
+    float: none; /* Remove the floating behavior */
+  }
+
+  .timeline-item::before {
+    display: none; /* Hide the dot */
+  }
+}
+
 
 /* experience */
 
@@ -571,7 +645,7 @@ body.light-theme #download a {
 /*--------------------------------------------*/
 #projects {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 .project-grid {
