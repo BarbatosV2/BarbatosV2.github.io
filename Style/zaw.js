@@ -45,7 +45,7 @@ const dynamicWords = ["Machine learning", "AI", "3D modeling", "Web Development"
 const typingSpeed = 50; // Speed of typing in milliseconds
 const deletingSpeed = 30; // Speed of deleting in milliseconds
 const pauseBeforeDelete = 1000; // Pause duration before deleting in milliseconds
-const typingDelay = 1000; // Delay before starting typing in milliseconds
+const typingDelay = 0; // Delay before starting typing in milliseconds
 let currentIndex = 0; // Index of the current word being typed
 
 // Function to display text with typewriter effect
