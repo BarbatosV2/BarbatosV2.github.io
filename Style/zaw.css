@@ -740,7 +740,7 @@ body.light-theme .github-link {
   }
 
   .project-item img {
-    width: 100%; /* Adjust the width of the GIF images on mobile */
+    max-width: 100%; /* Adjust the width of the GIF images on mobile */
   }
 }
 
@@ -749,7 +749,7 @@ body.light-theme .github-link {
     grid-template-columns: repeat(1, 1fr); /* Change to one column on even smaller screens */
   }
   .project-item img {
-    width: 100%; /* Adjust the width of the GIF images on mobile */
+    max-width: 100%; /* Adjust the width of the GIF images on mobile */
   }
 }
 
