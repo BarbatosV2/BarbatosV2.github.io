@@ -41,7 +41,7 @@ function toggleTheme() {
 
 }
 
-const dynamicWords = ["Machine learning", "AI", "3D modeling", "Web Development", "Computer Vision", "Data Science"]; // Words to display dynamically
+const dynamicWords = ["Machine Learning", "AI", "3D Modeling", "Web Development", "Computer Vision", "Data Science"]; // Words to display dynamically
 const typingSpeed = 50; // Speed of typing in milliseconds
 const deletingSpeed = 30; // Speed of deleting in milliseconds
 const pauseBeforeDelete = 1000; // Pause duration before deleting in milliseconds
