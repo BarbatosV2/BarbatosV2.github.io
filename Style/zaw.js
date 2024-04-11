@@ -1,45 +1,43 @@
 const body = document.body;
+const themeToggle = document.getElementById('theme-toggle');
 
 function toggleTheme() {
     body.classList.toggle('light-theme');
     body.classList.toggle('dark-theme');
 
-    // Change the GitHub icon based on the theme
-    const githubIcon = document.querySelector('.github-icon img');
-    const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
-    githubIcon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
-
-    // Change the GitHub icon based on the theme for the projects section
-    const githubIconProjects = document.querySelectorAll('#projects .github-logo');
-    githubIconProjects.forEach(icon => {
-        icon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
-    });
-
-    const catImage = document.getElementById('catImage');
-    catImage.src = `Logos/cat/cat_${theme}.png`;
-
-    // Change the theme toggle text
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.textContent = body.classList.contains('dark-theme') ? 'Light Mode' : 'Dark Mode';
-
-    // Change the copyright text color based on the theme
-    const copyrightText = document.querySelector('#copyright p');
-    const textColor = body.classList.contains('dark-theme') ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
-    copyrightText.style.color = textColor;
-    
-    // Change colors for hamburger menu and navigation buttons
-    const hamburgerBars = document.querySelectorAll('.hamburger-menu .bar');
-    const navButtons = document.querySelectorAll('#navbar a');
-    const themeColor = body.classList.contains('dark-theme') ? '#fff' : '#333';
-    hamburgerBars.forEach(bar => {
-        bar.style.backgroundColor = themeColor;
-    });
-    navButtons.forEach(button => {
-        button.style.color = themeColor;
-    });
-    slidingBar.style.backgroundColor = body.classList.contains('dark-theme') ? '#2c2c2c' : '#fff';
-
+// Change the text content of the theme toggle
+if (body.classList.contains('dark-theme')) {
+    themeToggle.textContent = 'Light Mode';
+} else {
+    themeToggle.textContent = 'Dark Mode';
 }
+
+// Change the GitHub icon based on the theme
+const githubIcon = document.querySelector('.github-icon img');
+const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+githubIcon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
+
+// Change the GitHub icon based on the theme for the projects section
+const githubIconProjects = document.querySelectorAll('#projects .github-logo');
+githubIconProjects.forEach(icon => {
+    icon.src = `Logos/Github-Logos/github-mark-${theme}.png`;
+});
+
+const catImage = document.getElementById('catImage');
+catImage.src = `Logos/cat/cat_${theme}.png`;
+
+// Change the copyright text color based on the theme
+const copyrightText = document.querySelector('#copyright p');
+const textColor = body.classList.contains('dark-theme') ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
+copyrightText.style.color = textColor;
+    
+// Change colors for hamburger menu and navigation buttons
+const hamburgerBars = document.querySelectorAll('.hamburger-menu .bar');
+const navButtons = document.querySelectorAll('#navbar a');
+const themeColor = body.classList.contains('dark-theme') ? '#fff' : '#333';
+hamburgerBars.forEach(bar => {bar.style.backgroundColor = themeColor;});
+navButtons.forEach(button => {button.style.color = themeColor;});
+slidingBar.style.backgroundColor = body.classList.contains('dark-theme') ? '#2c2c2c' : '#fff';}
 
 const dynamicWords = ["Machine Learning", "AI", "3D Modeling", "Web Development", "Computer Vision", "Data Science"]; // Words to display dynamically
 const typingSpeed = 50; // Speed of typing in milliseconds
