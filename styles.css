@@ -1,0 +1,132 @@
+body {
+    background-color: #1E2328; /* Grey background color */
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    padding: 20px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-image {
+    position: absolute;
+    top: 15%;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow-image:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.gallery-image {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.; /* Faded opacity for side images */
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+
+.image-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1E2328;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+    color: #F0E6D2; /* Font color */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.paragraph-container {
+    color: #F0E6D2; /* Default font color */
+}
+
+.model-viewer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.model-view-css-fix{
+    object-fit: contain;
+    height: 80vh;
+    width:auto;  
+  }
+  model-viewer {
+    width: 40vh;
+    height: 40vh;
+    margin: auto;
+    position: relative; /* Ensure the background image is positioned relative to the model viewer */
+    background-image: url(icons/boarder.png);
+    background-size: 80%; /* Adjust the size as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+model-viewer::before {
+    content: ''; /* Create a pseudo-element to hold the background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(icons/dash_circle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: rotateBackground 30s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+  @media only screen and (max-width: 600px) {
+    .gallery-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .model-viewer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .model-view-css-fix {
+        height: -10%; /* Adjust height as needed */
+        width: auto;
+    }
+
+}
