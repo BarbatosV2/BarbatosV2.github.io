@@ -758,17 +758,16 @@ body.light-theme .github-link {
   height: auto;
 }
 
+/* Default LinkedIn icon styling */
 .linkedin-icon img {
-  content: url('Logos/LinkedIn-Logos/LI-Logo.png'); /* Default LinkedIn icon */
-  height: 50px; /* Default height */
-  width: auto; /* Auto width to maintain aspect ratio */
+  content: url('Logos/LinkedIn-Logos/LI-Logo.png');
 }
 
+/* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
   .linkedin-icon img {
-      content: url('Logos/LinkedIn-Logos/LI-In-Bug.png'); /* New icon for smaller screens */
-      height: 60px; /* Increased height for smaller screens */
-      width: auto; /* Auto width to maintain aspect ratio */
+      content: url('path/to/your/new-linkedin-icon.png'); /* Replace with the path to your new image */
   }
 }
+
 
