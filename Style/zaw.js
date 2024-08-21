@@ -105,14 +105,4 @@ function toggleMenu() {
     }
   }
   
-  function updateLinkedInIcon() {
-    const linkedinIcon = document.querySelector('.linkedin-icon img');
-    if (window.innerWidth <= 768) {
-        linkedinIcon.src = 'Logos/LinkedIn-Logos/LI-In-Bug.png'; // New icon
-    } else {
-        linkedinIcon.src = 'Logos/LinkedIn-Logos/LI-Logo.png'; // Original icon
-    }
-}
-
-window.addEventListener('resize', updateLinkedInIcon);
-window.addEventListener('load', updateLinkedInIcon);
+ 
